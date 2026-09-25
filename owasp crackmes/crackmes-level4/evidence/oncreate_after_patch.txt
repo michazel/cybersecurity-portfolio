@@ -1,0 +1,27 @@
+.method public onCreate(Landroid/os/Bundle;)V
+    .locals 3
+    .param p1, "savedInstanceState"    # Landroid/os/Bundle;
+
+    .line 33
+    invoke-super {p0, p1}, L♫/上;->onCreate(Landroid/os/Bundle;)V
+
+    .line 34
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0}, Landroid/app/Activity;->setRequestedOrientation(I)V
+
+    .line 35
+    const v0, 0x7f09001c
+
+    invoke-virtual {p0, v0}, L♫/上;->setContentView(I)V
+
+    .line 37
+    const/16 v0, -0x10
+
+    iput-byte v0, p0, Lre/pwnme/MainActivity;->θ:B
+
+    invoke-virtual {p0}, Lre/pwnme/MainActivity;->₩()V
+
+    .line 44
+    return-void
+.end method

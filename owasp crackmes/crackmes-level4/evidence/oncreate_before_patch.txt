@@ -1,0 +1,75 @@
+.method public onCreate(Landroid/os/Bundle;)V
+    .locals 3
+    .param p1, "savedInstanceState"    # Landroid/os/Bundle;
+
+    .line 33
+    invoke-super {p0, p1}, L♫/上;->onCreate(Landroid/os/Bundle;)V
+
+    .line 34
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0}, Landroid/app/Activity;->setRequestedOrientation(I)V
+
+    .line 35
+    const v0, 0x7f09001c
+
+    invoke-virtual {p0, v0}, L♫/上;->setContentView(I)V
+
+    .line 37
+    const/16 v0, -0x10
+
+    iput-byte v0, p0, Lre/pwnme/MainActivity;->θ:B
+
+    .line 38
+    new-instance v0, L♫/ᵤ;
+
+    invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, L♫/ᵤ;-><init>(Landroid/content/Context;)V
+
+    .line 39
+    .local v0, "rb":L♫/ᵤ;
+    invoke-virtual {v0}, L♫/ᵤ;->₤()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {v0}, L♫/ᵤ;->θ()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    invoke-virtual {v0}, L♫/ᵤ;->ö()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 40
+    :cond_0
+    const/16 v1, 0x539
+
+    div-int/lit8 v1, v1, 0x0
+
+    .line 41
+    .local v1, "a":I
+    iget-byte v2, p0, Lre/pwnme/MainActivity;->θ:B
+
+    or-int/lit8 v2, v2, 0xf
+
+    int-to-byte v2, v2
+
+    iput-byte v2, p0, Lre/pwnme/MainActivity;->θ:B
+
+    .line 43
+    .end local v1    # "a":I
+    :cond_1
+    invoke-virtual {p0}, Lre/pwnme/MainActivity;->₩()V
+
+    .line 44
+    return-void
+.end method

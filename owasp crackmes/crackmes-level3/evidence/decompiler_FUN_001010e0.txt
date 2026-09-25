@@ -1,0 +1,64 @@
+void FUN_001010e0(undefined8 *param_1)
+
+{
+  uint *puVar1;
+  uint *puVar2;
+  long lVar3;
+
+  lVar3 = DAT_00115008 * 0x41c64e6d + 0x3039;
+  DAT_00115008 = lVar3;
+  puVar1 = malloc(0x10);
+  if (puVar1 != (uint *)0x0) {
+    *puVar1 = (uint)lVar3 & 0x7fffffff;
+    if (_1_sub_doit__opaque_list1_1 == (uint *)0x0) {
+      *(uint **)(puVar1 + 2) = puVar1;
+      puVar2 = (uint *)&_1_sub_doit__opaque_list1_1;
+    }
+    else {
+      puVar2 = _1_sub_doit__opaque_list1_1 + 2;
+      *(undefined8 *)(puVar1 + 2) = *(undefined8 *)puVar2;
+    }
+*(uint **)puVar2 = puVar1;
+  }
+  lVar3 = lVar3 * 0x41c64e6d + 0x3039;
+  DAT_00115008 = lVar3;
+  puVar1 = malloc(0x10);
+  if (puVar1 != (uint *)0x0) {
+    *puVar1 = (uint)lVar3 & 0x7fffffff;
+    if (_1_sub_doit__opaque_list1_1 == (uint *)0x0) {
+      *(uint **)(puVar1 + 2) = puVar1;
+      puVar2 = (uint *)&_1_sub_doit__opaque_list1_1;
+    }
+    else {
+      puVar2 = _1_sub_doit__opaque_list1_1 + 2;
+      *(undefined8 *)(puVar1 + 2) = *(undefined8 *)puVar2;
+    }
+    *(uint **)puVar2 = puVar1;
+.....
+  lVar3 = lVar3 * 0x41c64e6d + 0x3039;
+  DAT_00115008 = lVar3;
+  puVar1 = malloc(0x10);
+  if (puVar1 != (uint *)0x0) {
+    *puVar1 = (uint)lVar3 & 0x7fffffff;
+    puVar2 = _1_sub_doit__opaque_list1_1;
+    if (_1_sub_doit__opaque_list1_1 == (uint *)0x0) {
+      *(uint **)(puVar1 + 2) = puVar1;
+      _1_sub_doit__opaque_list1_1 = puVar1;
+    }
+    else {
+      *(undefined8 *)(puVar1 + 2) = *(undefined8 *)(_1_sub_doit__opaque_list1_1>
+      *(uint **)(puVar2 + 2) = puVar1;
+    }
+  }
+  _1_sub_doit__opaque_list2_1 = _1_sub_doit__opaque_list1_1;
+  if (_1_sub_doit__opaque_list1_1 != (uint *)0x0) {
+    *param_1 = 0;
+    param_1[1] = 0;
+    param_1[2] = 0;
+    *(undefined1 *)(param_1 + 3) = 0;
+    param_1[1] = 0x15131d5a1903000d;
+    *param_1 = 0x1549170f1311081d;
+    param_1[2] = 0x14130817005a0e08;
+  }
+  return;
+}

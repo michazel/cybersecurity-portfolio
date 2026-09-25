@@ -1,0 +1,119 @@
+Open: /data/local/cfg-ynhne/app_device
+Open: /data/system/etc/ld-configs/java_patch/java-hot-patch.config
+Open: /data/local/cfg-ynhne/app_device
+Open: /data/local/cfg-ynhne/app_sysprop
+Open: /data/local/cfg-ynhne/app_sysprop
+Open: /data/local/cfg-ynhne/app_turbo
+Open: /proc/self/cmdline
+Open: /data/local/cfg-ynhne/app_guri
+Open: /data/app/re.pwnme-5PODr-Z6Ilc_b3rj8mEf0w==/base.apk.x86_64.flock
+Open: /data/app/re.pwnme-5PODr-Z6Ilc_b3rj8mEf0w==/oat/x86_64/base.vdex
+Open: /data/app/re.pwnme-5PODr-Z6Ilc_b3rj8mEf0w==/base.apk
+Open: /system/framework/x86_64/boot.art
+Open: /data/dalvik-cache/x86_64/system@framework@boot.art
+Open: /data/app/re.pwnme-5PODr-Z6Ilc_b3rj8mEf0w==/oat/x86_64/base.art
+Open: /mnt/shared/Applications/gspd.json
+Open: /data/local/cfg-ynhne/app_turbo
+Open: /data/local/cfg-ynhne/app_xpt
+Open: /data/local/cfg-ynhne/app_xpt
+Open: /data/app/re.pwnme-5PODr-Z6Ilc_b3rj8mEf0w==/base.apk
+Open: /data/app/re.pwnme-5PODr-Z6Ilc_b3rj8mEf0w==/lib/x86_64/libnative-lib.so
+[snprintf] /fake_status
+[snprintf] /fake_status
+[snprintf] /fake_status
+[snprintf] /fake_status
+[snprintf] /fake_status
+[snprintf] /fake_status
+[snprintf] /fake_status
+[snprintf] /fake_status
+[snprintf] /fake_status
+[snprintf] /fake_status
+[snprintf] /fake_status
+[snprintf] /fake_status
+[snprintf] /fake_status
+[snprintf] /fake_status
+[snprintf] /fake_status
+[snprintf] /fake_status
+[snprintf] /fake_status
+[snprintf] /fake_status
+[snprintf] /fake_status
+[snprintf] /proc/self/fd/.
+[snprintf] /proc/self/fd/..
+[snprintf] /proc/self/fd/0
+[snprintf] /proc/self/fd/1
+[snprintf] /proc/self/fd/2
+[snprintf] /proc/self/fd/3
+[snprintf] /proc/self/fd/4
+[snprintf] /proc/self/fd/5
+[snprintf] /proc/self/fd/6
+[snprintf] /proc/self/fd/7
+[snprintf] /proc/self/fd/8
+[snprintf] /proc/self/fd/9
+[snprintf] /proc/self/fd/10
+[snprintf] /proc/self/fd/11
+[snprintf] /proc/self/fd/12
+[snprintf] /proc/self/fd/13
+[snprintf] /proc/self/fd/14
+[snprintf] /proc/self/fd/15
+[snprintf] /proc/self/fd/16
+[snprintf] /proc/self/fd/17
+[snprintf] /proc/self/fd/18
+[snprintf] /proc/self/fd/19
+[snprintf] /proc/self/fd/20
+[snprintf] /proc/self/fd/21
+[snprintf] /proc/self/fd/22
+[snprintf] /proc/self/fd/23
+[snprintf] /proc/self/fd/24
+[snprintf] /proc/self/fd/25
+[snprintf] /proc/self/fd/26
+[snprintf] /proc/self/fd/27
+[snprintf] /proc/self/fd/28
+[snprintf] /proc/self/fd/29
+[snprintf] /proc/self/fd/30
+[snprintf] /proc/self/fd/31
+[snprintf] /proc/self/fd/32
+[snprintf] /proc/self/fd/33
+[snprintf] /proc/self/fd/34
+[snprintf] /proc/self/fd/35
+[snprintf] /proc/self/fd/36
+[snprintf] /proc/self/fd/37
+[snprintf] /proc/self/fd/38
+[snprintf] /proc/self/fd/39
+[snprintf] /proc/self/fd/40
+[snprintf] /proc/self/fd/41
+[snprintf] /proc/self/fd/42
+[snprintf] /proc/self/fd/42
+Open: /data/local/su
+Open: /data/local/bin/su
+Open: /data/local/xbin/su
+Open: /sbin/su
+Open: /su/bin/su
+Open: /system/bin/su
+Open: /system/bin/.ext/su
+Open: /system/bin/failsafe/su
+Open: /system/sd/xbin/su
+Open: /system/usr/we-need-root/su
+Open: /system/xbin/su
+Open: /cache/su
+Open: /data/su
+Open: /dev/su
+Open: /data/user_de/0/re.pwnme/code_cache/com.android.skia.shaders_cache
+Open: /data/local/cfg-ynhne/gl_force
+Process crashed: Bad access due to invalid address
+
+***
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+Build fingerprint: 'Android/aosp_marlin/marlin:9/PQ3A.190605.07291804/3793265:user/release-keys'
+Revision: '0'
+ABI: 'x86_64'
+pid: 3792, tid: 3825, name: re.pwnme  >>> com.android.chrome:sandboxed_process0 <<<
+signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0xfa970f9d
+    rax 000000002c94d436  rbx 00007638725c0f01  rcx 00000000caf4592e  rdx 00007638728e1801
+    r8  0000000000000000  r9  0000000000015574  r10 00000000fa970f9d  r11 00000000000555d0
+    r12 146d4c42f6fca101  r13 a0d887280a106000  r14 0000000000000000  r15 9826d623ef664800
+    rdi 00007638728e16dc  rsi 00007638728e1828
+    rbp 00007638725c74b0  rsp 00007638725c0fa0  rip 00007638726e458e
+
+backtrace:
+    #00 pc 000000000011c58e  /data/app/re.pwnme-5PODr-Z6Ilc_b3rj8mEf0w==/lib/x86_64/libnative-lib.so
+***

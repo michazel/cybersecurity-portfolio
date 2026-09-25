@@ -1,0 +1,51 @@
+# virtual methods
+.method protected onCreate(Landroid/os/Bundle;)V
+    .locals 1
+
+    invoke-static {}, Lsg/vantagepoint/a/c;->a()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-static {}, Lsg/vantagepoint/a/c;->b()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-static {}, Lsg/vantagepoint/a/c;->c()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const-string v0, "Root detected!"
+
+    invoke-direct {p0, v0}, Lsg/vantagepoint/uncrackable1/MainActivity;->a(Ljav>
+
+    :cond_1
+    invoke-virtual {p0}, Lsg/vantagepoint/uncrackable1/MainActivity;->getApplic>
+
+    move-result-object v0
+
+    invoke-static {v0}, Lsg/vantagepoint/a/b;->a(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    const-string v0, "App is debuggable!"
+
+    invoke-direct {p0, v0}, Lsg/vantagepoint/uncrackable1/MainActivity;->a(Ljav>
+
+    :cond_2
+    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;>
+
+    const/high16 p1, 0x7f030000
+
+    invoke-virtual {p0, p1}, Lsg/vantagepoint/uncrackable1/MainActivity;->setCo>
+
+    return-void
+.end method

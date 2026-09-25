@@ -1,0 +1,5 @@
+undefined8 Java_sg_vantagepoint_uncrackable3_MainActivity_baz(void)
+
+{
+  return 0x18110e3;
+}
