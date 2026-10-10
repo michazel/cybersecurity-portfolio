@@ -1,0 +1,16 @@
+.method protected onCreate(Landroid/os/Bundle;)V
+    .registers 6
+
+    invoke-direct {p0}, Lsg/vantagepoint/uncrackable2/MainActivity;->init()V
+
+    new-instance v0, Lsg/vantagepoint/uncrackable2/CodeCheck;
+    invoke-direct {v0}, Lsg/vantagepoint/uncrackable2/CodeCheck;-><init>()V
+    iput-object v0, p0, Lsg/vantagepoint/uncrackable2/MainActivity;->m:Lsg/vantagepoint/uncrackable2/CodeCheck;
+
+    invoke-super {p0, p1}, Landroid/support/v7/app/c;->onCreate(Landroid/os/Bundle;)V
+
+    const p1, 0x7f09001b
+    invoke-virtual {p0, p1}, Lsg/vantagepoint/uncrackable2/MainActivity;->setContentView(I)V
+
+    return-void
+.end method

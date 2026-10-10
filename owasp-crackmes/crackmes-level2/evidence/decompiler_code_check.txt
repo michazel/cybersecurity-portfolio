@@ -1,0 +1,31 @@
+void Java_sg_vantagepoint_uncrackable2_CodeCheck_bar
+               (long *param_1,undefined8 param_2,undefined8 param_3)
+
+{
+  long lVar1;
+  int iVar2;
+  undefined8 uVar3;
+  char *__s1;
+  char local_50 [24];
+  long local_38;
+  
+  lVar1 = tpidr_el0;
+  local_38 = *(long *)(lVar1 + 0x28);
+  uVar3 = 0;
+  if (DAT_0011300c == '\x01') {
+    builtin_strncpy(local_50,"Thanks for all the fish",0x18);
+    __s1 = (char *)(**(code **)(*param_1 + 0x5c0))(param_1,param_3,0);
+    iVar2 = (**(code **)(*param_1 + 0x558))(param_1,param_3);
+    if ((iVar2 == 0x17) && (iVar2 = strncmp(__s1,local_50,0x17), iVar2 == 0)) {
+      uVar3 = 1;
+    }
+    else {
+      uVar3 = 0;
+    }
+  }
+  if (*(long *)(lVar1 + 0x28) == local_38) {
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail(uVar3);
+}

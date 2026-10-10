@@ -1,0 +1,7 @@
+void Java_sg_vantagepoint_uncrackable2_MainActivity_init(void)
+
+{
+  FUN_00100918();
+  DAT_0011300c = 1;
+  return;
+}

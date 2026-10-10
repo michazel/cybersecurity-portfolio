@@ -1,0 +1,406 @@
+.method public onClick(Landroid/view/View;)V
+    .locals 9
+    .param p1, "v"    # Landroid/view/View;
+
+    .line 52
+    const-string v0, "%08d"
+
+    iget-object v1, p0, Lre/pwnme/MainActivity$θ;->θ:Landroid/widget/Button;
+
+    if-eqz v1, :cond_6
+
+    .line 53
+    iget-object v1, p0, Lre/pwnme/MainActivity$θ;->θ:Lre/pwnme/MainActivity;
+
+    const v2, 0x7f070065
+
+    invoke-virtual {v1, v2}, L♫/上;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/widget/TextView;
+
+    .line 54
+    .local v1, "r2coin_token":Landroid/widget/TextView;
+    iget-object v2, p0, Lre/pwnme/MainActivity$θ;->θ:Lre/pwnme/MainActivity;
+
+    invoke-static {v2}, Lre/pwnme/MainActivity;->θ(Lre/pwnme/MainActivity;)Z
+
+    move-result v2
+
+    const-string v3, "r2c-"
+
+    const/high16 v4, -0x10000
+
+    const/4 v5, 0x1
+
+    const/4 v6, 0x0
+
+    if-eqz v2, :cond_5
+
+    .line 56
+    :try_start_0
+    iget-object v2, p0, Lre/pwnme/MainActivity$θ;->θ:Lre/pwnme/MainActivity;
+
+    invoke-static {v2}, Lre/pwnme/MainActivity;->θ(Lre/pwnme/MainActivity;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/String;->length()I
+
+    move-result v2
+
+    const/4 v7, 0x4
+
+    if-eq v2, v7, :cond_0
+
+    .line 57
+    iget-object v0, p0, Lre/pwnme/MainActivity$θ;->θ:Lre/pwnme/MainActivity;
+
+    invoke-virtual {v0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    const-string v2, "PIN code must be 4 digits long..."
+
+    invoke-static {v0, v2, v6}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v0
+
+    .line 59
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+
+    .line 60
+    return-void
+
+    .line 62
+    :cond_0
+    iget-object v2, p0, Lre/pwnme/MainActivity$θ;->θ:Lre/pwnme/MainActivity;
+
+    new-array v7, v5, [Ljava/lang/Object;
+
+    iget-object v8, p0, Lre/pwnme/MainActivity$θ;->θ:Lre/pwnme/MainActivity;
+
+    invoke-static {v8}, Lre/pwnme/MainActivity;->θ(Lre/pwnme/MainActivity;)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-static {v8}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v8
+
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v8
+
+    aput-object v8, v7, v6
+
+    invoke-static {v0, v7}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v2, v7}, Lre/pwnme/MainActivity;->θ(Lre/pwnme/MainActivity;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 63
+    iget-object v2, p0, Lre/pwnme/MainActivity$θ;->θ:Lre/pwnme/MainActivity;
+
+    invoke-static {v2}, Lre/pwnme/MainActivity;->Φ(Lre/pwnme/MainActivity;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/String;->length()I
+
+    move-result v2
+
+    const/16 v7, 0x8
+
+    if-gt v2, v7, :cond_4
+
+    .line 64
+    iget-object v2, p0, Lre/pwnme/MainActivity$θ;->θ:Lre/pwnme/MainActivity;
+
+    new-array v7, v5, [Ljava/lang/Object;
+
+    iget-object v8, p0, Lre/pwnme/MainActivity$θ;->θ:Lre/pwnme/MainActivity;
+
+    invoke-static {v8}, Lre/pwnme/MainActivity;->Φ(Lre/pwnme/MainActivity;)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-static {v8}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v8
+
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v8
+
+    aput-object v8, v7, v6
+
+    invoke-static {v0, v7}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v2, v0}, Lre/pwnme/MainActivity;->Φ(Lre/pwnme/MainActivity;Ljava/lang/String;)Ljava/lang/String;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 77
+    nop
+
+    .line 79
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v2, p0, Lre/pwnme/MainActivity$θ;->θ:Lre/pwnme/MainActivity;
+
+    invoke-static {v2}, Lre/pwnme/MainActivity;->θ(Lre/pwnme/MainActivity;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lre/pwnme/MainActivity$θ;->θ:Lre/pwnme/MainActivity;
+
+    invoke-static {v2}, Lre/pwnme/MainActivity;->Φ(Lre/pwnme/MainActivity;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->getBytes()[B
+
+    move-result-object v0
+
+    .line 82
+    .local v0, "inBuff":[B
+    new-instance v2, L♫/ᵤ;
+
+    iget-object v7, p0, Lre/pwnme/MainActivity$θ;->θ:Lre/pwnme/MainActivity;
+
+    invoke-virtual {v7}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v7
+
+    invoke-direct {v2, v7}, L♫/ᵤ;-><init>(Landroid/content/Context;)V
+
+    .line 83
+    .local v2, "rb":L♫/ᵤ;
+    invoke-virtual {v2}, L♫/ᵤ;->₤()Z
+
+    move-result v7
+
+    if-nez v7, :cond_1
+
+    .line 84
+    invoke-virtual {v2}, L♫/ᵤ;->θ()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_2
+
+    invoke-virtual {v2}, L♫/ᵤ;->ö()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_2
+
+    .line 85
+    :cond_1
+    iget-object v7, p0, Lre/pwnme/MainActivity$θ;->θ:Lre/pwnme/MainActivity;
+
+    invoke-static {v7}, Lre/pwnme/MainActivity;->θ(Lre/pwnme/MainActivity;)B
+
+    move-result v8
+
+    or-int/lit8 v8, v8, 0xf
+
+    int-to-byte v8, v8
+
+    invoke-static {v7, v8}, Lre/pwnme/MainActivity;->θ(Lre/pwnme/MainActivity;B)B
+
+    .line 86
+    new-instance v7, Ljava/lang/NullPointerException;
+
+    invoke-direct {v7}, Ljava/lang/NullPointerException;-><init>()V
+
+    .line 87
+    .local v7, "np":Ljava/lang/NullPointerException;
+    invoke-virtual {v7}, Ljava/lang/Object;->notify()V
+
+    .line 90
+    .end local v7    # "np":Ljava/lang/NullPointerException;
+    :cond_2
+    iget-object v7, p0, Lre/pwnme/MainActivity$θ;->θ:Lre/pwnme/MainActivity;
+
+    invoke-virtual {v7}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v7
+
+    const-string v8, "Tokenizing your r2coin..."
+
+    invoke-static {v7, v8, v6}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v7
+
+    .line 92
+    invoke-virtual {v7}, Landroid/widget/Toast;->show()V
+
+    .line 95
+    iget-object v7, p0, Lre/pwnme/MainActivity$θ;->θ:Lre/pwnme/MainActivity;
+
+    invoke-static {v7}, Lre/pwnme/MainActivity;->θ(Lre/pwnme/MainActivity;)B
+
+    move-result v8
+
+    invoke-virtual {v7, v0, v8}, Lre/pwnme/MainActivity;->gXftm3iswpkVgBNDUp([BB)[B
+
+    move-result-object v7
+
+    .line 97
+    .local v7, "out":[B
+    aget-byte v6, v7, v6
+
+    .line 98
+    .local v6, "ret":B
+    const/16 v8, 0x51
+
+    if-ne v6, v8, :cond_3
+
+    .line 99
+    invoke-virtual {v1, v4}, Landroid/widget/TextView;->setTextColor(I)V
+
+    goto :goto_0
+
+    .line 101
+    :cond_3
+    const-string v4, "#10b010"
+
+    invoke-static {v4}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
+    move-result v4
+
+    invoke-virtual {v1, v4}, Landroid/widget/TextView;->setTextColor(I)V
+
+    .line 103
+    :goto_0
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-static {v7, v5}, Lre/pwnme/MainActivity;->θ([BI)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 105
+    .end local v0    # "inBuff":[B
+    .end local v2    # "rb":L♫/ᵤ;
+    .end local v6    # "ret":B
+    .end local v7    # "out":[B
+    goto :goto_1
+
+    .line 66
+    :cond_4
+    :try_start_1
+    iget-object v0, p0, Lre/pwnme/MainActivity$θ;->θ:Lre/pwnme/MainActivity;
+
+    invoke-virtual {v0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    const-string v2, "Enormous amount to tokenize r2coins.\nRadare2 is a non-profit organization :)"
+
+    invoke-static {v0, v2, v6}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v0
+
+    .line 69
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+
+    .line 70
+    return-void
+
+    .line 72
+    :catch_0
+    move-exception v0
+
+    .line 73
+    .local v0, "e":Ljava/lang/Exception;
+    iget-object v2, p0, Lre/pwnme/MainActivity$θ;->θ:Lre/pwnme/MainActivity;
+
+    invoke-virtual {v2}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    const-string v3, "Enter PIN code/amount as numeric..."
+
+    invoke-static {v2, v3, v6}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v2
+
+    .line 75
+    invoke-virtual {v2}, Landroid/widget/Toast;->show()V
+
+    .line 76
+    return-void
+
+    .line 106
+    .end local v0    # "e":Ljava/lang/Exception;
+    :cond_5
+    new-array v0, v5, [Ljava/lang/Object;
+
+    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    aput-object v2, v0, v6
+
+    const-string v2, "%032d"
+
+    invoke-static {v2, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 107
+    .local v0, "empty":Ljava/lang/String;
+    invoke-virtual {v1, v4}, Landroid/widget/TextView;->setTextColor(I)V
+
+    .line 108
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 111
+    .end local v0    # "empty":Ljava/lang/String;
+    .end local v1    # "r2coin_token":Landroid/widget/TextView;
+    :cond_6
+    :goto_1
+    return-void
+.end method

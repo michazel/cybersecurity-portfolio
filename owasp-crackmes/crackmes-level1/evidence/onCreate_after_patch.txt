@@ -1,0 +1,12 @@
+# virtual methods
+.method protected onCreate(Landroid/os/Bundle;)V
+    .locals 1
+
+    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;>
+
+    const/high16 p1, 0x7f030000
+
+    invoke-virtual {p0, p1}, Lsg/vantagepoint/uncrackable1/MainActivity;->setCo>
+
+    return-void
+.end method

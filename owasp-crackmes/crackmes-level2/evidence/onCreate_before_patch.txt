@@ -1,0 +1,59 @@
+.method protected onCreate(Landroid/os/Bundle;)V
+    .registers 6
+
+    invoke-direct {p0}, Lsg/vantagepoint/uncrackable2/MainActivity;->init()V
+
+    invoke-static {}, Lsg/vantagepoint/a/b;->a()Z
+    move-result v0
+    if-nez v0, :cond_15
+    invoke-static {}, Lsg/vantagepoint/a/b;->b()Z
+    move-result v0
+    if-nez v0, :cond_15
+    invoke-static {}, Lsg/vantagepoint/a/b;->c()Z
+    move-result v0
+    if-eqz v0, :cond_1a
+
+    :cond_15
+    const-string v0, "Root detected!"
+    invoke-direct {p0, v0}, Lsg/vantagepoint/uncrackable2/MainActivity;->a(Ljava/lang/String;)V
+
+    :cond_1a
+    invoke-virtual {p0}, Lsg/vantagepoint/uncrackable2/MainActivity;->getApplicationContext()Landroid/content/Context;
+    move-result-object v0
+    invoke-static {v0}, Lsg/vantagepoint/a/a;->a(Landroid/content/Context;)Z
+    move-result v0
+    if-eqz v0, :cond_29
+
+    const-string v0, "App is debuggable!"
+    invoke-direct {p0, v0}, Lsg/vantagepoint/uncrackable2/MainActivity;->a(Ljava/lang/String;)V
+
+    :cond_29
+    new-instance v0, Lsg/vantagepoint/uncrackable2/MainActivity$2;
+    invoke-direct {v0, p0}, Lsg/vantagepoint/uncrackable2/MainActivity$2;-><init>(Lsg/vantagepoint/uncrackable2/MainActivity;)V
+
+    const/4 v1, 0x3
+    new-array v1, v1, [Ljava/lang/Void;
+
+    const/4 v2, 0x0
+    const/4 v3, 0x0
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x1
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x2
+    aput-object v3, v1, v2
+
+    invoke-virtual {v0, v1}, Lsg/vantagepoint/uncrackable2/MainActivity$2;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+
+    new-instance v0, Lsg/vantagepoint/uncrackable2/CodeCheck;
+    invoke-direct {v0}, Lsg/vantagepoint/uncrackable2/CodeCheck;-><init>()V
+    iput-object v0, p0, Lsg/vantagepoint/uncrackable2/MainActivity;->m:Lsg/vantagepoint/uncrackable2/CodeCheck;
+
+    invoke-super {p0, p1}, Landroid/support/v7/app/c;->onCreate(Landroid/os/Bundle;)V
+
+    const p1, 0x7f09001b
+    invoke-virtual {p0, p1}, Lsg/vantagepoint/uncrackable2/MainActivity;->setContentView(I)V
+
+    return-void
+.end method
